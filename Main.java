@@ -7,7 +7,7 @@ public class Main implements Directions {
     /**
      * Do NOT edit this.  Put your code inside the runJerooCode method below.
      */
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         Map.getInstance().loadMap("maps/ifLabs.jev");
         new JerooGUI();
         runJerooCode();
@@ -25,7 +25,5 @@ public class Main implements Directions {
         test.test3_findNextDirection();
         test.test4_isWayBlocked();
         test.test5_carpet();
-       
     }
-
 }
