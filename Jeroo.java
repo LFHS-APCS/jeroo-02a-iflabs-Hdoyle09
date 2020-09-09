@@ -30,7 +30,11 @@ if (isFacing(WEST)) {
      */
     public boolean isLeftBlocked()
     {
+      if (isClear(LEFT))
         return false;
+    }else
+    if (is
+      return true;
     }
 
     /**
