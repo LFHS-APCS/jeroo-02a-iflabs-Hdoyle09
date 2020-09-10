@@ -13,11 +13,9 @@ public class Jeroo extends JerooBase {
 if (isFacing(WEST)) {
         turn(LEFT);
         turn(LEFT);
-        } else 
-        if (isFacing(NORTH)){
+        } else if (isFacing(NORTH)){
           turn(RIGHT);
-        } else 
-        if (isFacing(SOUTH)){
+        } else if (isFacing(SOUTH)){
           turn(LEFT);
         }
     }
@@ -30,11 +28,18 @@ if (isFacing(WEST)) {
      */
     public boolean isLeftBlocked()
     {
-      if (isClear(LEFT))
-        return false;
-    }else
-    if (is
-      return true;
+      if (isClear(LEFT)){
+        return false;}
+    else  if (isWater(LEFT)){
+      return true;}
+    else  if (isClear(LEFT)){
+      turn(LEFT);
+      hop();
+      turn(RIGHT);
+      turn(RIGHT);
+      hop();
+      turn(LEFT);
+     return true;}
     }
 
     /**
