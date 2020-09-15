@@ -29,17 +29,24 @@ if (isFacing(WEST)) {
     public boolean isLeftBlocked()
     {
       if (isClear(LEFT)){
-        return false;}
-    else  if (isWater(LEFT)){
+        turn(LEFT);
+      hop();
+      turn(RIGHT);
+      if (isWater(LEFT))
+      {turn(RIGHT);
+      hop();
+      turn(LEFT);
       return true;}
-    else  if (isClear(LEFT)){
-      turn(LEFT);
-      hop();
-      turn(RIGHT);
-      turn(RIGHT);
+      else 
+      {turn(RIGHT);
       hop();
       turn(LEFT);
-     return true;}
+      return false; }
+      }else{
+     if (isWater(LEFT)){
+      return true;
+      }
+      }
     }
 
     /**
@@ -51,6 +58,22 @@ if (isFacing(WEST)) {
      */
     public void findNextDirection()
     {
+      if (isFlower(AHEAD))
+      hop();
+      pick();
+      if (isFlower(AHEAD))
+      hop();
+      pick();
+      turn(LEFT);
+      turn(LEFT);
+      hop();
+      turn(LEFT);
+      else if (isClear(AHEAD))
+      turn(LEFT);
+      turn(LEFT);
+      hop();
+      turn(LEFT);
+
 
     }
 
