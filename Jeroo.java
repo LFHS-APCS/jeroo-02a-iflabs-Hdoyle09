@@ -61,23 +61,23 @@ if (isFacing(WEST)) {
      */
     public void findNextDirection()
     {
-      /*
+      
       if (isFlower(AHEAD))
-      hop();
-      pick();
+        hop();
+        pick();
       if (isFlower(AHEAD))
-      hop();
-      pick();
-      turn(LEFT);
-      turn(LEFT);
-      hop();
-      turn(LEFT);
+        hop();
+        pick();
+       turn(LEFT);
+       turn(LEFT);
+       hop();
+        turn(LEFT);
       else if (isClear(AHEAD))
       turn(LEFT);
       turn(LEFT);
       hop();
       turn(LEFT);
-  */
+  
 
     }
 
