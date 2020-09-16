@@ -30,22 +30,25 @@ if (isFacing(WEST)) {
     {
       if (isClear(LEFT)){
         turn(LEFT);
-      hop();
-      turn(RIGHT);
-      if (isWater(LEFT))
-      {turn(RIGHT);
-      hop();
-      turn(LEFT);
-      return true;}
-      else 
-      {turn(RIGHT);
-      hop();
-      turn(LEFT);
-      return false; }
-      }else{
-     if (isWater(LEFT)){
-      return true;
-      }
+        hop();
+        turn(RIGHT);
+        if (isWater(LEFT))
+        {
+          turn(RIGHT);
+          hop();
+          turn(LEFT);
+           return true;}
+        else 
+        {
+           turn(RIGHT);
+          hop();
+          turn(LEFT);
+          return false; 
+        }
+        } else{
+          return true;
+        
+      
       }
     }
 
@@ -58,6 +61,7 @@ if (isFacing(WEST)) {
      */
     public void findNextDirection()
     {
+      /*
       if (isFlower(AHEAD))
       hop();
       pick();
@@ -73,7 +77,7 @@ if (isFacing(WEST)) {
       turn(LEFT);
       hop();
       turn(LEFT);
-
+  */
 
     }
 
